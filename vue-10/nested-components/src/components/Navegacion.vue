@@ -1,9 +1,7 @@
 <template>
     <ul class="nav">        
-        <NavegacionItem titulo='Inicio' />
-        <NavegacionItem titulo='Acerca' />
-        <NavegacionItem titulo='Tienda' />
-        <NavegacionItem titulo='Contacto' />
+        <NavegacionItem v-bind:navegacionData="item" v-for="(item, index) in itemsDeNavegacion" :key="index"/>
+        
     </ul>
 </template>
 
@@ -14,7 +12,18 @@ export default {
     name: 'Navegacion',
     components: {
         NavegacionItem
-    }
+    },
+    data() {
+        return {
+            itemsDeNavegacion: [
+                { titulo: "Inicio", url: '/inicio' },
+                { titulo: "Acerca", url: '/acerca' },
+                { titulo: "Tienda", url: '/tienda' },
+                { titulo: "Contacto", url: '/contacto' },
+                { titulo: "Mapa", url: '/mapa' }
+            ]
+        }
+    },
 }
 </script>
 
