@@ -7,6 +7,7 @@
      <div class="row">
          <Opcion1/>
          <Opcion2/>
+         <Opcion3/>
      </div>
  </div>
 </template>
@@ -14,11 +15,13 @@
 <script>
 import Opcion1 from './Opcion1.vue'
 import Opcion2 from './Opcion2.vue'
+import Opcion3 from "./Opcion3.vue"
+
 
 export default {
     name: "Contenido",
     components: {
-        Opcion1, Opcion2
+        Opcion1, Opcion2, Opcion3
     }
 }
 </script>
