@@ -2,7 +2,7 @@
     <div class="card col-md-4">
         <div class="card-body">
             <h5 class="card-title">
-                Opcion 2
+                Opcion 2 - {{entradaDeTexto}}
             </h5>
             <form>
                 <p class="card-text">
@@ -12,7 +12,7 @@
                     <input v-bind:value="entradaDeTexto"/>
                 </div>
                 <div class="row">
-                    <a href="#" class="btn btn-secondary">Opcion 2</a>
+                    <button class="btn btn-primary" v-on:click="entradaDeTexto = 'Nuevo texto'">Opcion 2</button>
                 </div>
             </form>
         </div>
