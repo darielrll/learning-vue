@@ -12,7 +12,13 @@
                     <input v-bind:value="entradaDeTexto"/>
                 </div>
                 <div class="row">
-                    <button class="btn btn-primary" v-on:click="entradaDeTexto = 'Nuevo texto'">Opcion 2</button>
+                    <button class="btn btn-secondary" v-on:click="entradaDeTexto = 'Nuevo texto'">Opcion 2</button>
+                </div>
+                <div class="row">
+                    <input v-model="entradaDeTexto"/>
+                </div>
+                <div class="row">
+                    <button class="btn btn-secondary" >Opcion 2.1</button>
                 </div>
             </form>
         </div>
