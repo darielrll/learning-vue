@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <MiComponente/>
-
     <div class="container">
       <div class="row">
         <Navegacion/>
@@ -14,15 +12,13 @@
 </template>
 
 <script>
-import MiComponente from './components/MiComponente.vue'
 import Navegacion from './components/Navegacion.vue'
 import Contenido from './components/Contenido.vue'
 
 export default {
   name: 'App',
   components: {
-    Contenido,
-    MiComponente, Navegacion
+    Contenido, Navegacion
   }
 }
 </script>
