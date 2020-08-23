@@ -1,4 +1,7 @@
 # learning-vue
+
+### 01-vue-essencials: 
+
 Hands on taken a Vue.JS course(https://www.linkedin.com/learning/vue-js-esencial/)
 
 Vue
